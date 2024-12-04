@@ -14,13 +14,8 @@ fn main() {
     println!("{} {}", 320, 240);
     for y in 0..240 {
         for x in 0..320 {
-            print!("{} ",
-                   if image[y][x] {
-                       "1"
-                   } else {
-                       "0"
-                   });
+            print!("{} ", if image[y][x] { "1" } else { "0" });
         }
-        println!("");
+        println!();
     }
 }
